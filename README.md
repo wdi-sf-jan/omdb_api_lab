@@ -1,16 +1,16 @@
 OMDB Lab
 ========
 
+The Open Movie Database (OMDB) allows you to search for movies and
+find out details about them. We going to create a movie search tool
+that relies on OMDB's API.
+
 In this lab we're going to make use of this week's
 [jQuery](http://jquery.com/) lessons. The main objective will be to
 search the [OMDB API](http://www.omdbapi.com/) using jQuery's AJAX
 methods. A secondary objective will be to reinfornce our use of jQuery
 to interact with the DOM (e.g., selecting HTML elements, adding event
 listeners, and rendering new elements to the page).
-
-The Open Movie Database (OMDB) allows you to search for movies and
-find out details about them. We going to create a movie search tool
-that relies on OMDB's API.
 
 Part 1
 ------
@@ -47,6 +47,7 @@ search term.
       use its API.
     * Use one of jQuery's AJAX methods: `$.ajax()`, `$.get()`, or `$.getJSON()`.
     * You don't need to sign up for an API key, unless you want to.
+    * Try using the 's' parameter to return multiple results.
 7. When the list of matching movies is returned, render the movie
 titles to the screen.
     * Use jQuery to construct new DOM elements for the titles and add
@@ -54,6 +55,8 @@ titles to the screen.
     * A good strategy might be to have a container (e.g., a `<div>` or
     `<ul>` in your HTML file that will hold the search results.
     * You may want to clear any old results before rendering new ones.
+8. If your search response does not return any results, make sure to let the user know that nothing was found! 
+    * Need a search term? Why not 'zealoushacker'
 
 Part 2: Bonus
 -------------
